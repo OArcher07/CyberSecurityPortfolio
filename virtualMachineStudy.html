@@ -1,0 +1,111 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Machine Study</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!--<header>
+        <div class="switch">
+            <div class="flicker"></div>
+            <div class="moon"></div>
+        </div>
+    </header>-->
+
+    <section class="main-pages">
+        <div class="main-text-pages">
+            <h1>Virtual Machine Study</h1>
+            <p>Here are some of my notes and resources regarding the understanding of virtual machines.</p>
+            <br/>
+            <div class="notes">
+                <h3>
+                    What is a Virtual Machine?
+                </h3>
+                <ol type="1">
+                    <li>Definition: A virtual machine the functions as a virtual computer system with its own CPU, memory, network interface, and storage, created on a physical hardware system.</li>
+                    <li>Hypervisor (virtual machine monitor VMM)</li>
+                    <ol type="A">
+                        <li>Software that creates and runs VMs</li>
+                        <li>Allows computer to support multiple guest VMs by virtually sharing its resources, such as memory and processing.</li>
+                        <li>Examples: Kernel-based VM, Red Hat software, VMware</li>
+                        <li>Manages hardware and seperates physical resources from virtual environments</li>
+                        <li>Schedules request to access resources so the VMs operating system can access the shared pool of physical resources.</li>
+                        <li>Types of Hypervisors</li>
+                            <ol type="a">
+                                <li>Definition: Types of software that allows  us to run an operating system within another operating system.</li>
+                                <li>
+                                    Bare metal
+                                    <ol type="i">
+                                        <li>VM resources schedule directly to hardware by hypervisor (KVM, LinuxKernel)</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    Hosted
+                                    <ol type="i">
+                                        <li>Schduled against host operating system, then executed against hardware (VMware workstation, Oracle VirtualBox)</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                    </ol>
+                </ol>
+                <h3>
+                    Why use a Virtual Machine?
+                </h3>
+                <ol type="1">
+                    <li>
+                        Server Consolidation
+                        <ol type="A">
+                            <li>Place many virtual servers onto each physical server to improve hardware utilization.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Keeps you from needing to purchase additional physical resources
+                        <ol type="A">
+                            <li>
+                                Enable failover and redundancy virtually
+                                <ol type="a">
+                                    <li>Failover: The ability to switch automatically to a reliable backup system</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Environment that is isolated from the rest of the system
+                        <ol type="A">
+                            <li>Won't interfere with anything else running on the host hardware</li>
+                            <li>Will contain damage if affected by malware, keeping the host system unaffected</li>
+                        </ol>
+                    </li>
+                </ol>
+                <h3>
+                    What is Proxy/Proxy Chaining?
+                </h3>
+                <ol type="1">
+                    <li>
+                        Using a middle-man
+                        <ol type="A">
+                            <li>
+                                Attacks are sent through proxy servers
+                                <ol type="a">
+                                    <li>The more proxy, the better hidden you are (proxy chaining)</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>olivia.a.archer@student158.org</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
